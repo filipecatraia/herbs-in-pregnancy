@@ -9,6 +9,7 @@
     "dev:assets": "webpack --watch",
     "dev:start": "live-server --open=./public/ --host=localhost --watch=./public/",
     "dev": "concurrently 'yarn:dev:*'",
+    "dev2": "concurrently --kill-others \"npm run dev:assets\" \"npm run dev:start\"",
     "build": "NODE_ENV=production webpack",
     "prepare": "npx crlf --set=LF node_modules/.bin/live-server"
   },
