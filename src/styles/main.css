@@ -1,0 +1,58 @@
+body {
+	background-color: #f4f2ee;
+	color: #14122e;
+}
+
+.card > * {
+	margin-top: 0.5rem;
+}
+
+.card > *:first-child {
+	margin-top: 0;
+}
+
+.card h4 + h6 {
+	color: #64627e;
+	font-weight: 600;
+	margin-top: 0 !important;
+}
+
+.card {
+	border: 0;
+	border-radius: 8px;
+	box-shadow: 2px 4px 12px 1px rgba(20, 18, 46, 0.15);
+	background-color: #fff;
+	margin-top: 2rem;
+	padding: 20px;
+}
+
+.card + .card {
+	margin-top: 2rem;
+}
+
+section h3 {
+	margin-top: 6rem;
+}
+
+ul.badges {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.badges li {
+	border-radius: 6px;
+	display: inline-block;
+	font-size: 0.85rem;
+	font-weight: 600;
+	padding: 1px 6px;
+}
+
+ul.badges li.dark {
+	background-color: #333;
+	color: #fff;
+}
+
+ul.badges li.warning {
+	background-color: #ffc008;
+}

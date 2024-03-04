@@ -10,9 +10,9 @@ module.exports = {
   mode: devMode ? 'development' : 'production',
 
   // Webpack needs to know where to start the bundling process,
-  // so we define the main JS and Sass files, both under
+  // so we define the main JS and CSS files, both under
   // the './src' directory
-  entry: ['./src/scripts/main.js', './src/styles/main.scss'],
+  entry: ['./src/scripts/main.js', './src/styles/main.css'],
 
   // This is where we define the path where Webpack will place
   // the bundled JS file
@@ -45,9 +45,9 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        // Look for Sass files and process them according to the
+        // Look for CSS files and process them according to the
         // rules specified in the different loaders
-        test: /\.(sa|sc)ss$/,
+        test: /\.css$/,
 
         // Use the following loaders from right-to-left, so it will
         // use sass-loader first and ending with MiniCssExtractPlugin
@@ -90,11 +90,6 @@ module.exports = {
                     ],
               },
             },
-          },
-          {
-            // Adds support for Sass files, if using Less, then
-            // use the less-loader
-            loader: 'sass-loader',
           },
         ],
       },
